@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/maxpro/static/css/main.c59cc657.css",
-    "main.js": "/maxpro/static/js/main.0889679d.js",
+    "main.js": "/maxpro/static/js/main.0d906c98.js",
+    "static/media/yogi.png": "/maxpro/static/media/yogi.f0d69fd48c2d59da41c2.png",
     "static/media/stock.png": "/maxpro/static/media/stock.72a392d6b7f7821ee6e0.png",
+    "static/media/ankit.png": "/maxpro/static/media/ankit.0621ed0338b06ae5a7d0.png",
     "static/media/shopping.png": "/maxpro/static/media/shopping.d8518fce062432f51373.png",
     "static/media/risk.png": "/maxpro/static/media/risk.b495aea7d7fd9047e4c8.png",
     "static/media/left-bg.png": "/maxpro/static/media/left-bg.1571de8447cfa343b0a2.png",
     "static/media/work.png": "/maxpro/static/media/work.70758e9636da97bb47f9.png",
     "static/media/chart.png": "/maxpro/static/media/chart.99dda6eed524623fb49e.png",
+    "static/media/anil.jpg": "/maxpro/static/media/anil.a7b77ebc190076491270.jpg",
     "index.html": "/maxpro/index.html",
     "main.c59cc657.css.map": "/maxpro/static/css/main.c59cc657.css.map",
-    "main.0889679d.js.map": "/maxpro/static/js/main.0889679d.js.map"
+    "main.0d906c98.js.map": "/maxpro/static/js/main.0d906c98.js.map"
   },
   "entrypoints": [
     "static/css/main.c59cc657.css",
-    "static/js/main.0889679d.js"
+    "static/js/main.0d906c98.js"
   ]
 }
