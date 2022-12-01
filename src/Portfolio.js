@@ -327,7 +327,7 @@ const Portfolio = () => {
                     {/* left section end */}
                     <section className="right">
                         <h6>my portfolio</h6>
-                        <h2>₹ 128 </h2>
+                        <h2>₹ 5000128 </h2>
                         <div className="smallBox">
                             <div className="box">
                                 <span>Gain</span>
@@ -341,20 +341,18 @@ const Portfolio = () => {
 
                         <div className="chartContainer">
                             <div className="heading">
-                                <h6>Cases</h6>
+                                <h6>stocks</h6>
                                 <span>view all</span>
                             </div>
                             <div className="chartRow">
                             <div className="chartBox">
                                     <h3>TCS<span>+ 0,26%</span></h3>
-                                    <span>Bitconin to USD</span>
                                     <img src={chart1} alt="graph chart"/>
-                                    <h3>₹ 20423</h3>
+                                    <h3>₹ 3400</h3>
                                     <h4>20% of your portfolio</h4>
                                 </div>
                                 <div className="chartBox">
                                     <h3>BHDFC<span>+ 0,26%</span></h3>
-                                    <span>Bitconin to USD</span>
                                     <img src={chart} alt="graph chart"/>
                                     <h3>₹ 20423</h3>
                                     <h4>20% of your portfolio</h4>

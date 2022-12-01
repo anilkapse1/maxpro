@@ -40,19 +40,19 @@ const Investmentdetail = () => {
         <div className='parentsection'>
             <div className='box'>
                 <span>Total Investment</span>
-                <h1>27,430</h1>
+                <h1>3500000</h1>
             </div>
             <div className='box'>
                 <span>current value</span>
-                <h1>29,430</h1>
+                <h1>5000128</h1>
             </div>
             <div className='box'>
                 <span>Day's P&L</span>
-                <h1>154<span>(+0.53%)</span></h1>
+                <h1>175000<span>(+5%)</span></h1>
             </div>
             <div className='box'>
                 <span>Total P&L</span>
-                <h1>1899<span>(+0.53%)</span></h1>
+                <h1>1500128<span>(+42.86%)</span></h1>
             </div>
         </div>
     </Investmentsection>

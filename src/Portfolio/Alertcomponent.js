@@ -133,7 +133,7 @@ const Alertcomponent = () => {
           <img src={chart1} alt="chart"/>
           <div className='chartCon'>
             <h3>Adani ENT /INR</h3>
-            <h2>₹234524<span>+0,26%</span></h2>
+            <h2>₹3900<span>+0,26%</span></h2>
           </div>
           <button>buy</button>
           <div className='dot'>
@@ -145,7 +145,7 @@ const Alertcomponent = () => {
           <img src={chart1} alt="chart"/>
           <div className='chartCon'>
             <h3>TCS /INR</h3>
-            <h2>₹234524<span>+0,26%</span></h2>
+            <h2>₹3400<span>+0,26%</span></h2>
           </div>
           <button>buy</button>
           <div className='dot'>
@@ -157,7 +157,7 @@ const Alertcomponent = () => {
           <img src={chart1} alt="chart"/>
           <div className='chartCon'>
             <h3>MAXHEALTH /INR</h3>
-            <h2>₹234524<span>+0,26%</span></h2>
+            <h2>₹451<span>+0,26%</span></h2>
           </div>
           <button>buy</button>
           <div className='dot'>
@@ -169,7 +169,7 @@ const Alertcomponent = () => {
           <img src={chart2} alt="chart"/>
           <div className='chartCon'>
             <h3>JINDALSTEL /INR</h3>
-            <h2>₹234524<span>+0,26%</span></h2>
+            <h2>₹562<span>+0,26%</span></h2>
           </div>
           <button>sell</button>
           <div className='dot'>
@@ -181,7 +181,7 @@ const Alertcomponent = () => {
           <img src={chart1} alt="chart"/>
           <div className='chartCon'>
             <h3>SBI /INR</h3>
-            <h2>₹234524<span>+0,26%</span></h2>
+            <h2>₹608<span>+0,26%</span></h2>
           </div>
           <button>buy</button>
           <div className='dot'>
