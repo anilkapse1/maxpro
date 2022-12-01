@@ -26,13 +26,13 @@ const Capital = () => {
             overflow: auto;
             position:relative;
             &::-webkit-scrollbar {
-                width: .5rem;   
+                width: .3rem;   
             }
             &::-webkit-scrollbar-track {
                 background-color: #fff;
             }
             &::-webkit-scrollbar-thumb {
-                background: purple;
+                background: #013A39;
                 border-radius: 5rem;
             }
             table{

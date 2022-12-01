@@ -20,6 +20,10 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Alertcomponent from "./Portfolio/Alertcomponent";
+import Holding from "./Portfolio/Holding";
+import Investmentdetail from "./Portfolio/Investmentdetail";
+
+
 
 
 
@@ -73,7 +77,6 @@ const Portfolio = () => {
         height: calc(100vh - 120px);
         display: flex;
         align-items: center;
-        ${'' /* background-color:rgb(244,11,35,.1); */}
       h1 {
         font-size: 2rem;
         color: ${({ theme }) => theme.colors.white};
@@ -88,7 +91,6 @@ const Portfolio = () => {
                 flex-direction: row;
                 flex-wrap: wrap;
                 gap:30px;
-                ${'' /* padding: 20px; */}
                 height:500px;
                 section{
                     &:nth-child(1){
@@ -123,29 +125,27 @@ const Portfolio = () => {
                         background-color:white;
                         
                     }
-                    #simple-tabpanel-0,#simple-tabpanel-1{
+                    #simple-tabpanel-0,#simple-tabpanel-1,#simple-tabpanel-2{
                         background-color:white;
                         height: 333px;
                         overflow: auto;
                         &::-webkit-scrollbar {
-                        width: .5rem;   
-                    }
-                    &::-webkit-scrollbar-track {
-                        background-color: #fff;
-                    }
-                    &::-webkit-scrollbar-thumb {
-                        background: purple;
-                        border-radius: 5rem;
-                    }
+                            width: .3rem;   
+                        }
+                        &::-webkit-scrollbar-track {
+                            background-color: #fff;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            background: #013A39;
+                            border-radius: 5rem;
+                        }
                         .MuiBox-root{
                             padding:0px;
                         }
                     }
                     #simple-tabpanel-0{
-                        font-weight:bold;
                     }
                     #simple-tabpanel-1{
-                        font-weight:bold;
                     }
 
                 } 
@@ -307,15 +307,20 @@ const Portfolio = () => {
                             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                                 <Tab label="alert" {...a11yProps(0)} />
-                                <Tab label="invest" {...a11yProps(1)} />
+                                <Tab label="holdings" {...a11yProps(1)} />
+                                <Tab label="Investment details" {...a11yProps(1)} />
                             </Tabs>
                             </Box>
                             <TabPanel value={value} index={0}>
                                 <Alertcomponent/>
                             </TabPanel>
                             <TabPanel value={value} index={1}>
-                                Item Two
+                                <Holding/>
                             </TabPanel>
+                            <TabPanel value={value} index={2}>
+                                <Investmentdetail/>
+                            </TabPanel>
+                            
                         </Box>
                     </section>
 
@@ -357,7 +362,7 @@ const Portfolio = () => {
                             </div>
                            
                         </div>
-                        <Button variant="outlined">
+                        <Button className="customButton" variant="outlined">
                             withdraw
                         </Button>
 

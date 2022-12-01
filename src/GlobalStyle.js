@@ -16,13 +16,13 @@ html {
     scroll-padding-top: 8.5rem;
 }
 html::-webkit-scrollbar {
-    width: .2rem;
+    width: .3rem;
 }
 html::-webkit-scrollbar-track {
     background-color: #fff;
 }
 html::-webkit-scrollbar-thumb {
-    background: purple;
+    background: #013A39;
     border-radius: 5rem;
 }
 img {
