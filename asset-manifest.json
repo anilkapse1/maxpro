@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/maxpro/static/css/main.c59cc657.css",
+    "main.js": "/maxpro/static/js/main.e8dba175.js",
+    "static/media/stock.png": "/maxpro/static/media/stock.72a392d6b7f7821ee6e0.png",
+    "static/media/shopping.png": "/maxpro/static/media/shopping.d8518fce062432f51373.png",
+    "static/media/risk.png": "/maxpro/static/media/risk.b495aea7d7fd9047e4c8.png",
+    "static/media/left-bg.png": "/maxpro/static/media/left-bg.1571de8447cfa343b0a2.png",
+    "static/media/work.png": "/maxpro/static/media/work.70758e9636da97bb47f9.png",
+    "static/media/chart.png": "/maxpro/static/media/chart.99dda6eed524623fb49e.png",
+    "index.html": "/maxpro/index.html",
+    "main.c59cc657.css.map": "/maxpro/static/css/main.c59cc657.css.map",
+    "main.e8dba175.js.map": "/maxpro/static/js/main.e8dba175.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c59cc657.css",
+    "static/js/main.e8dba175.js"
+  ]
+}
