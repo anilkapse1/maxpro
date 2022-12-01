@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/maxpro/static/css/main.c59cc657.css",
-    "main.js": "/maxpro/static/js/main.b10d61b8.js",
+    "main.js": "/maxpro/static/js/main.23a8db5b.js",
     "static/media/yogi.png": "/maxpro/static/media/yogi.f0d69fd48c2d59da41c2.png",
     "static/media/stock.png": "/maxpro/static/media/stock.72a392d6b7f7821ee6e0.png",
     "static/media/ankit.png": "/maxpro/static/media/ankit.0621ed0338b06ae5a7d0.png",
@@ -13,10 +13,10 @@
     "static/media/anil.jpg": "/maxpro/static/media/anil.a7b77ebc190076491270.jpg",
     "index.html": "/maxpro/index.html",
     "main.c59cc657.css.map": "/maxpro/static/css/main.c59cc657.css.map",
-    "main.b10d61b8.js.map": "/maxpro/static/js/main.b10d61b8.js.map"
+    "main.23a8db5b.js.map": "/maxpro/static/js/main.23a8db5b.js.map"
   },
   "entrypoints": [
     "static/css/main.c59cc657.css",
-    "static/js/main.b10d61b8.js"
+    "static/js/main.23a8db5b.js"
   ]
 }
