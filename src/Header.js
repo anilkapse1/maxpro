@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import Team from './Team';
+
 
 const Header = () => {
     const Header = styled.section`
@@ -82,6 +84,7 @@ const Header = () => {
                         <li><NavLink to="/maxpro">Home</NavLink></li>
                         <li><NavLink to="/risk-profiler">risk profiler</NavLink></li>
                         <li><NavLink to="/portfolio">portfolio</NavLink></li>
+                        <li><NavLink to="/team">team</NavLink></li>
                         <li className='avtar'>
                             <Stack direction="row">
                                 <span>Me<ArrowDropDownIcon/></span>

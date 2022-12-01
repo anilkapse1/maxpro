@@ -6,6 +6,8 @@ import Header from './Header'
 import Home from './Home'
 import Risk from './Risk'
 import Portfolio from './Portfolio'
+import Team from './Team'
+
 
 
 
@@ -32,6 +34,7 @@ const App = () => {
           <Route path="/maxpro" element={<Home/>}/>
           <Route path="/risk-profiler" element={<Risk/>}/>
           <Route path="/portfolio" element={<Portfolio/>}/>
+          <Route path="/team" element={<Team/>}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
