@@ -69,7 +69,7 @@ img {
     padding-top:60px;
 }
 
-button{
+button.customButton{
     border:1px solid yellow!important;
     color:${({theme})=>theme.colors.white}!important;
     border-radius:10px!important;

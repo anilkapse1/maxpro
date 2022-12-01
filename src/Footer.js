@@ -85,10 +85,10 @@ const Footer = () => {
               </h3>
               <p>© 2010 - 2022, MaxPro Broking Ltd. All rights reserved.</p>
               <div className="icons">
-                <IconButton aria-label="fingerprint" color="secondary">
+                <IconButton className="customButton" aria-label="fingerprint" color="secondary">
                  <TwitterIcon/>
                 </IconButton>
-                <IconButton aria-label="fingerprint" color="secondary">
+                <IconButton className="customButton" aria-label="fingerprint" color="secondary">
                   <LinkedInIcon/>
                 </IconButton>
               </div>

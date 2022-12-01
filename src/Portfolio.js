@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
 import Footer from "./Footer";
@@ -11,10 +11,51 @@ import Fullpage, {
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import chart from "./assets/images/chart.png";
+import chart1 from "./assets/images/chart1.png";
+import chart2 from "./assets/images/chart2.png";
 import {Button} from "@mui/material";
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Alertcomponent from "./Portfolio/Alertcomponent";
 
 
 
+interface TabPanelProps {
+    children?: React.ReactNode;
+    index: number;
+    value: number;
+  }
+  
+
+function TabPanel(props: TabPanelProps) {
+    const { children, value, index, ...other } = props;
+  
+    return (
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        id={`simple-tabpanel-${index}`}
+        aria-labelledby={`simple-tab-${index}`}
+        {...other}
+      >
+        {value === index && (
+          <Box sx={{ p: 3 }}>
+            <Typography>{children}</Typography>
+          </Box>
+        )}
+      </div>
+    );
+  }
+  
+  function a11yProps(index: number) {
+    return {
+      id: `simple-tab-${index}`,
+      'aria-controls': `simple-tabpanel-${index}`,
+    };
+  }
 
 const Portfolio = () => {
     
@@ -32,7 +73,7 @@ const Portfolio = () => {
         height: calc(100vh - 120px);
         display: flex;
         align-items: center;
-        background-color:rgb(244,11,35,.1);
+        ${'' /* background-color:rgb(244,11,35,.1); */}
       h1 {
         font-size: 2rem;
         color: ${({ theme }) => theme.colors.white};
@@ -46,8 +87,8 @@ const Portfolio = () => {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                gap:8px;
-                padding: 20px;
+                gap:30px;
+                ${'' /* padding: 20px; */}
                 height:500px;
                 section{
                     &:nth-child(1){
@@ -62,8 +103,51 @@ const Portfolio = () => {
                         flex-wrap: wrap;
                         flex-direction: column;
                         justify-content: space-around;
-                        border: 5px solid #383636;
+                        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
                     }
+                }
+                .left{
+                    .advisory_head{
+                        h3{
+                            color:white;
+                            font-size: .8rem;  
+                        }
+                        h4{
+                            color:white;  
+                            font-size: 1rem;
+                            font-weight:200;  
+                        }
+                    }
+
+                    .MuiTabs-flexContainer{
+                        background-color:white;
+                        
+                    }
+                    #simple-tabpanel-0,#simple-tabpanel-1{
+                        background-color:white;
+                        height: 333px;
+                        overflow: auto;
+                        &::-webkit-scrollbar {
+                        width: .5rem;   
+                    }
+                    &::-webkit-scrollbar-track {
+                        background-color: #fff;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: purple;
+                        border-radius: 5rem;
+                    }
+                        .MuiBox-root{
+                            padding:0px;
+                        }
+                    }
+                    #simple-tabpanel-0{
+                        font-weight:bold;
+                    }
+                    #simple-tabpanel-1{
+                        font-weight:bold;
+                    }
+
                 } 
                 .right{
                     display: flex;
@@ -190,8 +274,18 @@ const Portfolio = () => {
         .portfolio{
             height:600px!important;
         }
+        #simple-tabpanel-0,#simple-tabpanel-1{
+            height:433px!important;
+        }
+
     }
   `;
+
+  const [value, setValue] = React.useState(0);
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+      setValue(newValue);
+  };
+
 
   return (
     <Fullpage>
@@ -203,8 +297,29 @@ const Portfolio = () => {
               <div className="parent">
                 <div className="portfolioContainer">
                   <div className="portfolio">
+                  {/* left section start */}
                     <section className="left">
+                        <div className="advisory_head">
+                            <h3>Welcome back anil</h3>
+                            <h4>Investment advisor <HandshakeIcon/></h4>
+                        </div>
+                        <Box sx={{ width: '100%' }}>
+                            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                            <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+                                <Tab label="alert" {...a11yProps(0)} />
+                                <Tab label="invest" {...a11yProps(1)} />
+                            </Tabs>
+                            </Box>
+                            <TabPanel value={value} index={0}>
+                                <Alertcomponent/>
+                            </TabPanel>
+                            <TabPanel value={value} index={1}>
+                                Item Two
+                            </TabPanel>
+                        </Box>
                     </section>
+
+                    {/* left section end */}
                     <section className="right">
                         <h6>my portfolio</h6>
                         <h2>₹ 128 </h2>
@@ -226,21 +341,14 @@ const Portfolio = () => {
                             </div>
                             <div className="chartRow">
                             <div className="chartBox">
-                                    <h3>BTC<span>+ 0,26%</span></h3>
+                                    <h3>TCS<span>+ 0,26%</span></h3>
                                     <span>Bitconin to USD</span>
-                                    <img src={chart} alt="graph chart"/>
+                                    <img src={chart1} alt="graph chart"/>
                                     <h3>₹ 20423</h3>
                                     <h4>20% of your portfolio</h4>
                                 </div>
                                 <div className="chartBox">
-                                    <h3>BTC<span>+ 0,26%</span></h3>
-                                    <span>Bitconin to USD</span>
-                                    <img src={chart} alt="graph chart"/>
-                                    <h3>₹ 20423</h3>
-                                    <h4>20% of your portfolio</h4>
-                                </div>
-                                <div className="chartBox">
-                                    <h3>BTC<span>+ 0,26%</span></h3>
+                                    <h3>BHDFC<span>+ 0,26%</span></h3>
                                     <span>Bitconin to USD</span>
                                     <img src={chart} alt="graph chart"/>
                                     <h3>₹ 20423</h3>

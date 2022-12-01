@@ -143,21 +143,21 @@ const Pricing = () => {
                         <h1>-40<sup className='sup'>%</sup></h1>
                         <h5>just <span className='highlight1'>₹9540</span> <span className='strike'>₹15540</span> for <span className='highlight2'>13 months!</span></h5>
                         <h6>you save <span>₹600</span>, and you get a free month too</h6>
-                        <Button variant="outlined">Buy now</Button>
+                        <Button className="customButton"  variant="outlined">Buy now</Button>
                     </div>
                     <div>
                         <h3>pro+</h3>
                         <h1>-50<sup className='sup'>%</sup></h1>
                         <h5>just <span className='highlight1'>₹15540</span> <span className='strike'>₹15540</span> for <span className='highlight2'>13 months!</span></h5>
                         <h6>you save <span>₹600</span>, and you get a free month too</h6>
-                        <Button variant="outlined">Buy now</Button>
+                        <Button className="customButton" variant="outlined">Buy now</Button>
                     </div>
                     <div>
                         <h3>premium</h3>
                         <h1>-60<sup className='sup'>%</sup></h1>
                         <h5>just <span className='highlight1'>₹23940</span> <span className='strike'>₹15540</span> for <span className='highlight2'>13 months!</span></h5>
                         <h6>you save <span>₹600</span>, and you get a free month too</h6>
-                        <Button variant="outlined">Buy now</Button>
+                        <Button className="customButton"  variant="outlined">Buy now</Button>
                 </div>
                 </section>
             </div>

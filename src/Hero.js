@@ -64,7 +64,7 @@ const Hero = () => {
                     <div>
                         <h1>MaxPro to maximize your ROI </h1>
                         <p>Get investment related alerts based on your risk profile, market direction and timing.</p>
-                        <Button variant="outlined" onClick={()=>navigate("/risk-profiler")}>Get started</Button>
+                        <Button className="customButton" variant="outlined" onClick={()=>navigate("/risk-profiler")}>Get started</Button>
                     </div>
                 </section>
                 <section>

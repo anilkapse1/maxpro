@@ -195,7 +195,7 @@ const Steppercontrol = () => {
               <h3>You have a HIGH risk profile. We suggest you to invest.</h3>
                 <Laststep />
                 <div className="calltoaction">
-                  <Button variant="outlined" onClick={Lastback}>
+                  <Button variant="outlined" className="customButton" onClick={Lastback}>
                     Re-calculate
                   </Button>
                 </div>
@@ -209,6 +209,8 @@ const Steppercontrol = () => {
                       variant="outlined"
                       disabled={activeSteps === 0}
                       onClick={handleBack}
+                      className="customButton" 
+                      
                     >
                       Go Back
                     </Button>
@@ -216,6 +218,7 @@ const Steppercontrol = () => {
                       type="submit"
                       variant="outlined"
                       onClick={handleNext}
+                      className="customButton" 
                     >
                       {activeSteps === 7 ? "Finish" : "next question"}
                     </Button>
